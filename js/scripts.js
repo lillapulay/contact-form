@@ -13,9 +13,17 @@ $(document).ready(function () { // Ready: because we load the file in the head t
     statusElm.empty() // Empties the 'status' field upon loading the document
 
     if (email.length > 5 && email.includes('@') && email.includes('.')) { // Email has to be 5+ chars, include @ and .
-      statusElm.append('<div>Email is valid</div>')
+      statusElm.append('<div>Email is valid</div>') // Appends the messages to the status element
     } else {
       statusElm.append('<div>Email is not valid</div>')
     }
+
+    if (subject.length > 2) { // Subject has to be 2+ characters
+      statusElm.append('<div>Subject is valid</div>') // Appends the messages to the status element
+    } else {
+      statusElm.append('<div>Subject is not valid</div>')
+    }
+
+
   })
 })
