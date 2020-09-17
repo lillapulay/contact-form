@@ -18,13 +18,13 @@ $(document).ready(function () { // Ready: because we load the file in the head t
       statusElm.append('<div>Email is not valid</div>')
     }
 
-    if (subject.length > 2) { // Subject has to be 2+ characters
+    if (subject.length >= 2) { // Subject has to be 2 characters or more
       statusElm.append('<div>Subject is valid</div>') // Appends the messages to the status element
     } else {
       statusElm.append('<div>Subject is not valid</div>')
     }
 
-    if (message.length > 20) { // Message has to be 20+ characters
+    if (message.length > 10) { // Message has to be 10+ characters
       statusElm.append('<div>Message is valid</div>') // Appends the messages to the status element
     } else {
       statusElm.append('<div>Message is not valid</div>')
