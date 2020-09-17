@@ -9,7 +9,7 @@ $(document).ready(function () { // Ready: because we load the file in the head t
     var email = $('.email').val()
     var subject = $('.subject').val()
     var message = $('.message').val()
-    var status = $('.status')
+    var statusElm = $('.status')
     statusElm.empty() // Empties the 'status' field upon loading the document
 
     if (email.length > 5 && email.includes('@') && email.includes('.')) { // Email has to be 5+ chars, include @ and .
